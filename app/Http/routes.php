@@ -11,7 +11,12 @@
 |
 */
 
-Route::get('/', ['middleware' => 'guest', 'uses' => 'WelcomeController@index']);
+Route::get('/', 'WelcomeController@index');
+
+// Login Routes
+Route::get('auth/login', 'Auth\AuthController@getLogin');
+Route::post('auth/login', 'Auth\AuthController@postLogin');
+
 
 // Registration routes
 Route::get('auth/register', 'Auth\AuthController@getRegister');

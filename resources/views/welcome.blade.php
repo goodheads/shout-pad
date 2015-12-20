@@ -8,8 +8,18 @@
         </p>
     </div>
     <div class="text-center">
-        <a href="/auth/register" class="btn btn-default btn-lg github-sign-up-button">
-            <i class="fa fa-register"></i> Sign Up Right Here
-        </a>
+        @if(Auth::check())
+            <a href="/shouts" class="btn btn-default btn-lg github-sign-up-button">
+                <i class="fa fa-step-forward"></i> Make a Shoutout
+            </a>
+        @else
+            <a href="/auth/register" class="btn btn-default btn-lg github-sign-up-button">
+                <i class="fa fa-register"></i> Sign Up Right Here
+            </a>
+            <div>
+                <a href="/auth/login">Have an account already?, Click here to Sign in</a>
+            </div>
+        @endif
     </div>
+
 @stop

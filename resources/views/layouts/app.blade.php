@@ -15,13 +15,13 @@
         <div class="container">
             <div class="row">
                 @if ( Auth::check())
-                    <a href="/logout" class="btn btn-default pull-right meta-button">Log out <i class="fa fa-sign-out"></i></a>
+                    <a href="auth/logout" class="btn btn-default pull-right meta-button">Log out <i class="fa fa-sign-out"></i></a>
                 @endif
                 <h1 class="text-center page-title page-title"><a href="/">ShoutPad</a></h1>
             </div>
             <div class="row col-md-8 col-md-push-2">
                 @yield('content')
-            </div>
+            </div>`
 
             <div class="row col-md-8 col-md-push-2 text-center footer">
                 ShoutPad source is on GitHub: <a href="https://github.com/goodheads/shout-pad">goodheads/shout-pad</a>.<br>
