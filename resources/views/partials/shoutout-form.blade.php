@@ -3,7 +3,7 @@
 <form method="POST" action="/shout">
     {{ csrf_field() }}
     <div class="form-group">
-        <textarea name="shoutout" cols="5" rows="5"></textarea>
+        <textarea name="shoutout" class="form-control" cols="5" rows="5"></textarea>
     </div>
 
     <div class="text-right">
