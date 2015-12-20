@@ -1,45 +1,15 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Laravel</title>
+@extends('layouts.app')
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-
-        <style>
-            html, body {
-                height: 100%;
-            }
-
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
-
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
-
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
-
-            .title {
-                font-size: 96px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Laravel 5</div>
-            </div>
-        </div>
-    </body>
-</html>
+@section('content')
+    <p>Receive up-to-the-hour notifications on comments on your Gists. No work on your part, free because Tighten and DigitalOcean love you, cancel any time.</p>
+    <div class="pricing well text-center big">
+        <p>
+            <a href="/"><img src="shoutpad.jpg" alt="ShoutPad" style="max-width: 25rem"></a><br>
+        </p>
+    </div>
+    <div class="text-center">
+        <a href="/auth/register" class="btn btn-default btn-lg github-sign-up-button">
+            <i class="fa fa-register"></i> Sign Up Right Here
+        </a>
+    </div>
+@stop
