@@ -17,3 +17,6 @@ Route::get('/', ['middleware' => 'guest', 'uses' => 'WelcomeController@index']);
 Route::get('auth/register', 'Auth\AuthController@getRegister');
 Route::post('auth/register', 'Auth\AuthController@postRegister');
 
+// Shoutout routes
+Route::get('shouts', 'ShoutoutController@index');
+Route::post('shout', 'ShoutoutController@store');
