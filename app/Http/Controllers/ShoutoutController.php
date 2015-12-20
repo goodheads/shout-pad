@@ -43,7 +43,7 @@ class ShoutoutController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validates([
+        $this->validate($request, [
             'shoutout' => 'required'
         ]);
 
