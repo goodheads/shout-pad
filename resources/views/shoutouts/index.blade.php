@@ -2,6 +2,7 @@
 
 @section('content')
     <div class="container">
+        @include ('partials.shoutouts')
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-1">
                 <div class="panel panel-default panel-on-grey signup-box">

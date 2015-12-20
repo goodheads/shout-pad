@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Shout;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
@@ -22,7 +23,9 @@ class ShoutoutController extends Controller
      */
     public function index()
     {
-        return view('shoutouts.index');
+        $shoutouts = Shout::all();
+
+        return view('shoutouts.index', ['shouts' => $shoutouts]);
     }
 
     /**
