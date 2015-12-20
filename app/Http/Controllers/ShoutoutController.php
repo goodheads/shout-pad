@@ -43,7 +43,15 @@ class ShoutoutController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validates([
+            'shoutout' => 'required'
+        ]);
+
+        $request->user()->shouts()->create([
+            'text' => $request->shoutout,
+        ]);
+
+        return redirect('shouts');
     }
 
     /**

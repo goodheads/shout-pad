@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\User;
 use Illuminate\Database\Eloquent\Model;
 
 class Shout extends Model
@@ -12,4 +13,9 @@ class Shout extends Model
      * @var array
      */
     protected $fillable = ['user_id', 'text'];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

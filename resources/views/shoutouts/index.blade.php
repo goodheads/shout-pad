@@ -9,7 +9,7 @@
                     <h2 class="panel-title">Give a Shoutout</h2>
                 </div>
                 <div class="panel-body">
-                    @include ('partials.signup-form')
+                    @include ('partials.shoutout-form')
                 </div>
             </div>
         </div>

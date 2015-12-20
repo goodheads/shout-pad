@@ -11,6 +11,10 @@
     </div>
 
     <div class="form-group">
+        <input type="password" name="password_confirmation" class="form-control" placeholder="Confirm Password" />
+    </div>
+
+    <div class="form-group">
         <input type="text" name="name" placeholder="username" class="form-control" />
     </div>
 
