@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <p>Receive up-to-the-hour notifications on comments on your Gists. No work on your part, free because Tighten and DigitalOcean love you, cancel any time.</p>
-    <div class="pricing well text-center big">
+    <p>It is the celebration of Christmas. Give a Shoutout to your loved ones, Santa would definitely be happy with you on this!</p>
+    <div class="text-center big">
         <p>
             <a href="/"><img src="shoutpad.jpg" alt="ShoutPad" style="max-width: 25rem"></a><br>
         </p>
