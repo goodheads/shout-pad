@@ -22,7 +22,7 @@ class ShoutoutController extends Controller
      */
     public function index()
     {
-        //
+        return view('shoutouts.index');
     }
 
     /**
