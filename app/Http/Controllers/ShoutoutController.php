@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use Log;
 use App\Shout;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
@@ -43,6 +44,8 @@ class ShoutoutController extends Controller
         $request->user()->shouts()->create([
             'text' => $request->shoutout,
         ]);
+
+        Log::info('User created a shoutout successfully', ['email' => $request->user()->email]);
 
         return redirect('shouts');
     }

@@ -41,6 +41,12 @@ $app->singleton(
     App\Exceptions\Handler::class
 );
 
+$app->configureMonologUsing( function($monolog) {
+    $slackHandler = new Monolog\Handler\SlackHandler(env('SLACK_API_TOKEN'), '#devplayground');
+    $slackHandler->setlevel(Monolog\Logger::INFO);
+    $monolog->pushHandler( $slackHandler);
+});
+
 /*
 |--------------------------------------------------------------------------
 | Return The Application
