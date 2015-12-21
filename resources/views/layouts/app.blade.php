@@ -14,7 +14,7 @@
     <body>
         <div class="container">
             <div class="row">
-                @if ( Auth::check())
+                @if(Auth::check())
                     <a href="auth/logout" class="btn btn-default pull-right meta-button">Log out <i class="fa fa-sign-out"></i></a>
                 @endif
                 <h1 class="text-center page-title page-title"><a href="/">ShoutPad</a></h1>
@@ -25,7 +25,7 @@
 
             <div class="row col-md-8 col-md-push-2 text-center footer">
                 ShoutPad source is on GitHub: <a href="https://github.com/goodheads/shout-pad">goodheads/shout-pad</a>.<br>
-                By <a href="http://twitter.com/unicodeveloper/">Prosper Otemuyiwa</a>, for tutorial purpose <a href="https://goodheads.io/mattstauffer/leveraging-laravel-launching-side-projects-quickly-with-laravel">talk at Laracon 2015</a>.<br>
+                By <a href="http://twitter.com/unicodeveloper/">Prosper Otemuyiwa</a>, for tutorial purpose <a href="http://goodheads.io/2015/12/19/how-to-handle-logs-and-reports-in-your-app-using-laravel-5-part-1/">How to handle logs and reports in your app using Laravel 5</a>.<br>
             </div>
         </div>
     </body>
